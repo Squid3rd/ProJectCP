@@ -1,5 +1,5 @@
 # Quiz Game Worldwide
-Computer Programming Project KMITL Semester 2/2020 1st Year
+>  * Computer Programming Project KMITL Semester 2/2020 1st Year
 
 ## ที่มา
 
@@ -20,8 +20,9 @@ Computer Programming Project KMITL Semester 2/2020 1st Year
 ## Poster
 
 
-
-## สมาชิก
+---
+สมาชิก
+---
 นายจีรวัฒน์ ไม้ไหว    64070132 \n
 นายนนทพัทธ์ จิ๋วน๊อต  64070167 \n
 

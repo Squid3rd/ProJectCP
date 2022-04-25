@@ -59,7 +59,8 @@ int main(){
         2.When entering the game, there will be 7 questions per category, 4 choices each.\n\
         3.When more than 7 correct answers do a promotion Proceed to the next level \n\
           starting with Easy Normal and ending with Hard.\n\
-        4.If your HP = 0 you will be downgraded.(in case of Easy, questions will be reset.)\n");
+        4.If your HP = 0 you will be downgraded.(in case of Easy, questions will be reset.)\n\
+        5.Your have shop to buy your Hp.");
         printf("\n\n\t\t\t\"Y\" To begin this Quiz\n");
         printf("\t\t\t\"N\" To Return to Menu\n");
         int hp=0;
@@ -98,7 +99,7 @@ int main(){
 
     Story1:
     system("cls");
-    printf("\n\n\t\tOnce upon a time, the story of Mr. %s Aspiring to be Quiz king taomen dynasty\n\
+    printf("\n\n\t\t\tOnce upon a time, the story of Mr. %s Aspiring to be Quiz king taomen dynasty\n\
     \t\tIn the 4th Edo period So he came to answer questions at Workpoint in the FanPunThang program.\n\
     \t\tHow will his story end? Follow and play together in Quiz Game Worldwide\n", yourname);
     printf("\n\n\t\t\t\"Y\" To begin this Quiz\n");
@@ -119,16 +120,16 @@ int main(){
 
     pausee1:
     system("cls");
-    printf("\n\n\t\t____   ____  __ __  _____   ___\
+    printf("\n\n\t\t ____   ____  __ __  _____   ___\
 \n\t\t|    \\ /    ||  |  |/ ___/  /  _]\
 \n\t\t|  o  )  o  ||  |  (   \\_  /  [_ \
 \n\t\t|   _/|     ||  |  |\\__  ||    _]\
 \n\t\t|  |  |  _  ||  :  |/  \\ ||   [_ \
 \n\t\t|  |  |  |  ||     |\\    ||     |\
 \n\t\t|__|  |__|__| \\__,_| \\___||_____|\n");
-    printf("\n\n\t[R] to Resume\n");
-    printf("\n\t[M] to Menu\n");
-    printf("\n\t[Q] to Quit\n");
+    printf("\n\n\t\t\t[R] to Resume\n");
+    printf("\n\t\t\t[M] to Menu\n");
+    printf("\n\t\t\t[Q] to Quit\n");
     char pausee=toupper(getch());
     if (pausee=='R')
         {
@@ -151,16 +152,16 @@ int main(){
 
     pausen1:
     system("cls");
-    printf("\n\n\t\t____   ____  __ __  _____   ___\
+    printf("\n\n\t\t ____   ____  __ __  _____   ___\
 \n\t\t|    \\ /    ||  |  |/ ___/  /  _]\
 \n\t\t|  o  )  o  ||  |  (   \\_  /  [_ \
 \n\t\t|   _/|     ||  |  |\\__  ||    _]\
 \n\t\t|  |  |  _  ||  :  |/  \\ ||   [_ \
 \n\t\t|  |  |  |  ||     |\\    ||     |\
 \n\t\t|__|  |__|__| \\__,_| \\___||_____|\n");
-    printf("\n\n\t[R] to Resume\n");
-    printf("\n\t[M] to Menu\n");
-    printf("\n\t[Q] to Quit\n");
+    printf("\n\n\t\t\t[R] to Resume\n");
+    printf("\n\t\t\t[M] to Menu\n");
+    printf("\n\t\t\t[Q] to Quit\n");
     char pausen=toupper(getch());
     if (pausen=='R')
         {
@@ -183,16 +184,16 @@ int main(){
 
     pauseh1:
     system("cls");
-    printf("\n\n\t\t____   ____  __ __  _____   ___\
+    printf("\n\n\t\t ____   ____  __ __  _____   ___\
 \n\t\t|    \\ /    ||  |  |/ ___/  /  _]\
 \n\t\t|  o  )  o  ||  |  (   \\_  /  [_ \
 \n\t\t|   _/|     ||  |  |\\__  ||    _]\
 \n\t\t|  |  |  _  ||  :  |/  \\ ||   [_ \
 \n\t\t|  |  |  |  ||     |\\    ||     |\
 \n\t\t|__|  |__|__| \\__,_| \\___||_____|\n");
-    printf("\n\n\t[R] to Resume\n");
-    printf("\n\t[M] to Menu\n");
-    printf("\n\t[Q] to Quit\n");
+    printf("\n\n\t\t\t[R] to Resume\n");
+    printf("\n\t\t\t[M] to Menu\n");
+    printf("\n\t\t\t[Q] to Quit\n");
     char pauseh=toupper(getch());
     if (pauseh=='R')
         {
@@ -453,7 +454,7 @@ int main(){
         printf("\t\t|   Your current HP: %2d    |\t\t|   Quiz streak : %2d  |\n", hp, streak);
         printf("\t\t+--------------------------+\t\t+---------------------+\n");
 		printf("\n\n\t3.What is the northernmost province of Thailand?");
-		printf("\n\n\t\tA.Chiang Mai\t\tB.Rai Chiang\n\n\t\tC.Tak\t\t\tD.Kamphaeng Phet");
+		printf("\n\n\t\tA.Chiang Mai\t\tB.Chiang Rai\n\n\t\tC.Tak\t\t\tD.Kamphaeng Phet");
         printf("\n\n\n\t\t|   Money : %d   |\t\t\t[P] Shop\n", money);
         char gete3 = toupper(getch());
 		if (gete3=='B')
@@ -480,7 +481,7 @@ int main(){
         }
 		else if (gete3 == 'A' || gete3 == 'D' || gete3 == 'C')
 		{
-		    printf("\n\n\tWrong!!! Rai Chiang\n");
+		    printf("\n\n\tWrong!!! Chiang Rai\n");
             
             hp--;
             ownhp--;
@@ -529,7 +530,7 @@ int main(){
         }
 		else if (gete4 == 'A' || gete4 == 'B' || gete4 == 'D')
 		{
-		    printf("\n\n\tWrong!!! Northeast\n");
+		    printf("\n\n\tWrong!!! Bangkok\n");
             
             hp--;
             ownhp--;
@@ -577,7 +578,7 @@ int main(){
         }
 		else if (gete5 == 'D' || gete5 == 'B' || gete5 == 'C')
 		{
-		    printf("\n\n\tWrong!!! Northeast\n");
+		    printf("\n\n\tWrong!!! Central\n");
             
             hp--;
             ownhp--;

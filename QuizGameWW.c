@@ -10,16 +10,29 @@ int main(){
     char choose;
     mainhome:
     system("cls");
-    printf("\t\t\t-----------------------------------------\n");
-    printf("\t\t\t|       Project ComputerProgramming     |\n");
-    printf("\t\t\t|========================================\n");
-    printf("\t\t\t|          Quiz==Game==Worldwide        |\n");
-    printf("\t\t\t|========================================\n");
-    printf("\t\t\t|\t\t\"S\" Start\t\t|\n");
-    printf("\t\t\t|\t\t\"H\" High Score\t\t|\n");
-    printf("\t\t\t|\t\t\"Q\" Quit\t\t|\n");
-    printf("\t\t\t|\t\t\"G\" Github\t\t|\n");
-    printf("\t\t\t|_______________________________________|\n");
+    printf("\n\n\t\t\t      ___   __ __  ____  _____       ____   ____  ___ ___    ___\
+\n\t\t\t     /   \\ |  |  ||    ||     |     /    | /    ||   |   |  /  _]\
+\n\t\t\t    |     ||  |  | |  | |__/  |    |   __||  o  || _   _ | /  [_\
+\n\t\t\t    |  O  ||  |  | |  | |   __|    |  |  ||     ||  \\_/  ||    _]\
+\n\t\t\t    |     ||  :  | |  | |  /  |    |  |_ ||  _  ||   |   ||   [_\
+\n\t\t\t    |     ||     | |  | |     |    |     ||  |  ||   |   ||     |\
+\n\t\t\t     \\__,_| \\__,_||____||_____|    |___,_||__|__||___|___||_____|\n\
+\n\t\t\t  __    __   ___   ____   _      ___    __    __  ____  ___      ___\
+\n\t\t\t |  |__|  | /   \\ |    \\ | |    |   \\  |  |__|  ||    ||   \\    /  _]\
+\n\t\t\t |  |  |  ||     ||  D  )| |    |    \\ |  |  |  | |  | |    \\  /  [_\
+\n\t\t\t |  |  |  ||  O  ||    / | |___ |  D  ||  |  |  | |  | |  D  ||    _]\
+\n\t\t\t |  `  '  ||     ||    \\ |     ||     ||  `  '  | |  | |     ||   [_\
+\n\t\t\t  \\      / |     ||  .  \\|     ||     | \\      /  |  | |     ||     |\
+\n\t\t\t   \\_/\\_/   \\___/ |__|\\_||_____||_____|  \\_/\\_/  |____||_____||_____|\n");
+    printf("\n\n\t\t\t\t\t-----------------------------------------\n");
+    printf("\t\t\t\t\t|       Project ComputerProgramming     |\n");
+    printf("\t\t\t\t\t|========================================\n");
+    printf("\t\t\t\t\t|            Quiz Game Worldwide        |\n");
+    printf("\t\t\t\t\t|========================================\n");
+    printf("\t\t\t\t\t|\t\t\"S\" Start\t\t|\n");
+    printf("\t\t\t\t\t|\t\t\"G\" Github\t\t|\n");
+    printf("\t\t\t\t\t|\t\t\"Q\" Quit\t\t|\n");
+    printf("\t\t\t\t\t|_______________________________________|\n");
     choose = toupper(getch());
     if(choose == 'G')
         {
@@ -43,12 +56,13 @@ int main(){
         printf("\t\t\t|  How to play Quiz GAME!!!  |\n");
         printf("\t\t\t'----------------------------'\n\n");
         printf("\t1.There are 3 modes in this game, Easy, Normal and Hard.\n\
-        2.When entering the game, there will be 10 questions per category, 4 choices each.\n\
-        3.When more than 6 correct answers or less than 4 wrong answers do a promotion Proceed to the next level \n\
-        starting with Easy Normal and ending with Hard.\n\
-        4.If answering 4 questions incorrectly will be downgraded.(in case of Easy, questions will be reset.)\n");
+        2.When entering the game, there will be 7 questions per category, 4 choices each.\n\
+        3.When more than 7 correct answers do a promotion Proceed to the next level \n\
+          starting with Easy Normal and ending with Hard.\n\
+        4.If your HP = 0 you will be downgraded.(in case of Easy, questions will be reset.)\n");
         printf("\n\n\t\t\t\"Y\" To begin this Quiz\n");
         printf("\t\t\t\"N\" To Return to Menu\n");
+        int hp=0;
         int ownhp = 7;
         int money = 3000;
         int streak = 0;
@@ -56,12 +70,12 @@ int main(){
         int counteasy = 0, countnormal = 0, counthard = 0;
         int moneyeasy = 0, moneynormal = 0, moneyhard = 0;
         int hpe = 7, hpn, hph;
-        int mone = 3000, monn, monh;
+        int mone = 1000, monn, monh;
         int totalm, totalh;
         char chomain = toupper(getch());
         if (chomain=='Y')
         {
-            goto Easy;
+            goto Story;
         }
         else if(chomain=='N')
         {
@@ -73,6 +87,131 @@ int main(){
             goto Rule;
         }
     
+    Story:
+    system("cls");
+    char yourname[100];
+    printf("\n\n\t\tEnter your name : ");
+    scanf("%[^\n]s", yourname);
+    printf("\n\n\t\t\t\"Y\" To begin this Quiz\n");
+    printf("\t\t\t\"N\" To Return to Menu\n");
+    goto Story1;
+
+    Story1:
+    system("cls");
+    printf("\n\n\t\tOnce upon a time, the story of Mr. %s Aspiring to be Quiz king taomen dynasty\n\
+    \t\tIn the 4th Edo period So he came to answer questions at Workpoint in the FanPunThang program.\n\
+    \t\tHow will his story end? Follow and play together in Quiz Game Worldwide\n", yourname);
+    printf("\n\n\t\t\t\"Y\" To begin this Quiz\n");
+    printf("\t\t\t\"N\" To Return to Menu\n");
+    char sto1 = toupper(getch());
+    if (sto1=='Y')
+        {
+            goto Easy;
+        }
+    else if(sto1=='N')
+        {
+            goto mainhome;
+        }
+    else
+        {
+            goto Story;
+        }
+
+    pausee1:
+    system("cls");
+    printf("\n\n\t\t____   ____  __ __  _____   ___\
+\n\t\t|    \\ /    ||  |  |/ ___/  /  _]\
+\n\t\t|  o  )  o  ||  |  (   \\_  /  [_ \
+\n\t\t|   _/|     ||  |  |\\__  ||    _]\
+\n\t\t|  |  |  _  ||  :  |/  \\ ||   [_ \
+\n\t\t|  |  |  |  ||     |\\    ||     |\
+\n\t\t|__|  |__|__| \\__,_| \\___||_____|\n");
+    printf("\n\n\t[R] to Resume\n");
+    printf("\n\t[M] to Menu\n");
+    printf("\n\t[Q] to Quit\n");
+    char pausee=toupper(getch());
+    if (pausee=='R')
+        {
+            counteasy-=1;
+            goto Easy;
+        }
+    else if(pausee=='M')
+        {
+            goto mainhome;
+        }
+    else if(pausee=='Q')
+        {
+            exit(1);
+        }
+    else
+    {
+        goto pausee1;
+        
+    }
+
+    pausen1:
+    system("cls");
+    printf("\n\n\t\t____   ____  __ __  _____   ___\
+\n\t\t|    \\ /    ||  |  |/ ___/  /  _]\
+\n\t\t|  o  )  o  ||  |  (   \\_  /  [_ \
+\n\t\t|   _/|     ||  |  |\\__  ||    _]\
+\n\t\t|  |  |  _  ||  :  |/  \\ ||   [_ \
+\n\t\t|  |  |  |  ||     |\\    ||     |\
+\n\t\t|__|  |__|__| \\__,_| \\___||_____|\n");
+    printf("\n\n\t[R] to Resume\n");
+    printf("\n\t[M] to Menu\n");
+    printf("\n\t[Q] to Quit\n");
+    char pausen=toupper(getch());
+    if (pausen=='R')
+        {
+            countnormal-=1;
+            goto Normal;
+        }
+    else if(pausen=='M')
+        {
+            goto mainhome;
+        }
+    else if(pausen=='Q')
+        {
+            exit(1);
+        }
+    else
+    {
+        goto pausen1;
+        
+    }
+
+    pauseh1:
+    system("cls");
+    printf("\n\n\t\t____   ____  __ __  _____   ___\
+\n\t\t|    \\ /    ||  |  |/ ___/  /  _]\
+\n\t\t|  o  )  o  ||  |  (   \\_  /  [_ \
+\n\t\t|   _/|     ||  |  |\\__  ||    _]\
+\n\t\t|  |  |  _  ||  :  |/  \\ ||   [_ \
+\n\t\t|  |  |  |  ||     |\\    ||     |\
+\n\t\t|__|  |__|__| \\__,_| \\___||_____|\n");
+    printf("\n\n\t[R] to Resume\n");
+    printf("\n\t[M] to Menu\n");
+    printf("\n\t[Q] to Quit\n");
+    char pauseh=toupper(getch());
+    if (pauseh=='R')
+        {
+            counthard-=1;
+            goto Hard;
+        }
+    else if(pauseh=='M')
+        {
+            goto mainhome;
+        }
+    else if(pauseh=='Q')
+        {
+            exit(1);
+        }
+    else
+    {
+        goto pauseh1;
+        
+    }
 
     Retry:
     system("cls");
@@ -113,7 +252,7 @@ int main(){
 
     Retry1:
     system("cls");
-    ownhp = 7;
+    ownhp=7;
     counteasy= 0;
     money = 3000;
     countnormal=0;
@@ -143,7 +282,7 @@ int main(){
         }
     else
     {
-        goto Retry;
+        goto Retry1;
         
     }
 
@@ -151,6 +290,7 @@ int main(){
     Retry2:
     system("cls");
     ownhp = hpn;
+    hp = hpn;
     countnormal = 0;
     money = monn;
     counthard=0;
@@ -181,7 +321,7 @@ int main(){
         }
     else
     {
-        goto Retry;
+        goto Retry2;
         
     }
 
@@ -189,15 +329,25 @@ int main(){
     system("cls");
     
     int score = 0;
-    int hp = 0;
     hp += ownhp; 
+    if (counteasy == 8){
+        if (counthard>0){
+            goto Hard;
+        }
+        else if (countnormal > 0)
+        {
+            goto Normal;
+        }
+        else{
+            goto puzzle;
+        }
+    }
     for (i=counteasy; i<=8; i++)
     {
         system("cls");
         int question = counteasy;
         counteasy++;
-        printf("\n\n\t\t\t\t\tIn the stage of EASY");
-
+        printf("\n\n\t\t\t\t\tIn the stage of EASY\t\t\t[R] Pause");
     switch(question)
     {
         
@@ -208,18 +358,23 @@ int main(){
 		printf("\n\n\t1.If Thailand is divided into 6 regions Which region has the most provinces?");
 		printf("\n\n\t\tA.Central\t\tB.Sourthern\n\n\t\tC.Northern\t\tD.Northeast");
         printf("\n\n\n\t\t|   Money : %d   |\t\t\t[P] Shop\n", money);
+        
        char gete1= toupper(getch());
 
 		if (gete1=='D')
 		{
 		    printf("\n\n\tCorrect!!!");
-            
+            getch();
             streak++;
             money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B1;
             }
 		    break;
+        }
+        else if (gete1=='R'){
+            goto pausee1;
+            break;
         }
         else if (gete1=='P'){
             printf("\n\n\tGo to shop!");
@@ -261,9 +416,13 @@ int main(){
             streak++;
             money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B1;
             }
 		    break;
+        }
+        else if (gete2=='R'){
+            goto pausee1;
+            break;
         }
         else if (gete2=='P'){
             printf("\n\n\tGo to shop!");
@@ -305,9 +464,13 @@ int main(){
             streak++;
             money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B1;
             }
 		    break;
+        }
+        else if (gete3=='R'){
+            goto pausee1;
+            break;
         }
         else if (gete3=='P'){
             printf("\n\n\tGo to shop!");
@@ -350,9 +513,13 @@ int main(){
             streak++;
             money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B1;
             }
 		    break;
+        }
+        else if (gete4=='R'){
+            goto pausee1;
+            break;
         }
         else if (gete4=='P'){
             printf("\n\n\tGo to shop!");
@@ -394,10 +561,14 @@ int main(){
             streak++;
             money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B1;
             }
 		    break;
         } 
+        else if (gete5=='R'){
+            goto pausee1;
+            break;
+        }
         else if (gete5=='P'){
             printf("\n\n\tGo to shop!");
             getch();
@@ -439,9 +610,13 @@ int main(){
             streak++;
             money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B1;
             }
 		    break;
+        }
+        else if (gete6=='R'){
+            goto pausee1;
+            break;
         }
         else if (gete6=='P'){
             printf("\n\n\tGo to shop!");
@@ -486,10 +661,16 @@ int main(){
             monn = money;
             hpn = hp;
             if (streak%3 ==  0){
+                counteasy = 7;
                 goto Bonus;
+                break;
             }
            goto puzzle;
 		    break;
+        }
+        else if (gete7=='R'){
+            goto pausee1;
+            break;
         }
         else if (gete7=='P'){
             printf("\n\n\tGo to shop!");
@@ -526,7 +707,6 @@ int main(){
     Normal:
     system("cls");
     printf("Welcome to Normal!\t");
-    hp = hpn;
 
     for (i=countnormal; i<=8; i++)
     {
@@ -534,7 +714,7 @@ int main(){
         int question1 = countnormal;
         countnormal++;
         
-        printf("\n\n\t\t\t\t\tIn the stage of Normal");
+        printf("\n\n\t\t\t\t\tIn the stage of Normal\t\t\t[R] Pause");
         switch(question1)
         {
         case 1:
@@ -551,11 +731,15 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1000;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B2;
             }
 		    break;
+        }
+        else if (getn1=='R'){
+            goto pausen1;
+            break;
         }
         else if (getn1=='P'){
             printf("\n\n\tGo to shop!");
@@ -595,12 +779,16 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1000;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B2;
             }
 		    break;
-        } 
+        }
+        else if (getn2=='R'){
+            goto pausen1;
+            break;
+        }
         else if (getn2=='P'){
             printf("\n\n\tGo to shop!");
             getch();
@@ -640,11 +828,15 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1000;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B2;
             }
 		    break;
+        }
+        else if (getn3=='R'){
+            goto pausen1;
+            break;
         }
         else if (getn3=='P'){
             printf("\n\n\tGo to shop!");
@@ -684,11 +876,15 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1000;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B2;
             }
 		    break;
+        }
+        else if (getn4=='R'){
+            goto pausen1;
+            break;
         }
         else if (getn4=='P'){
             printf("\n\n\tGo to shop!");
@@ -729,11 +925,15 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1000;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B2;
             }
 		    break;
+        }
+        else if (getn5=='R'){
+            goto pausen1;
+            break;
         }
         else if (getn5=='P'){
             printf("\n\n\tGo to shop!");
@@ -774,11 +974,15 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1000;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B2;
             }
 		    break;
+        }
+        else if (getn6=='R'){
+            goto pausen1;
+            break;
         }
         else if (getn6=='P'){
             printf("\n\n\tGo to shop!");
@@ -818,13 +1022,21 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1000;
+            money += 500;
             monh = money;
             hph = hp;
+
             if (streak%3 ==  0){
+                countnormal = 7;
                 goto Bonus;
+                break;
             }
+            goto puzzle1;
 		    break;
+        }
+        else if (getn7=='R'){
+            goto pausen1;
+            break;
         }
         else if (getn7=='P'){
             printf("\n\n\tGo to shop!");
@@ -864,7 +1076,7 @@ int main(){
         system("cls");
         int question3 = counthard;
         counthard++;
-        printf("\n\n\t\t\t\t\tIn the stage of Hard");
+        printf("\n\n\t\t\t\t\tIn the stage of Hard\t\t\t[R] Pause");
         
         switch(question3)
         {
@@ -882,12 +1094,16 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1500;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B3;
             }
 
 		    break;
+        }
+        else if (geth1=='R'){
+            goto pauseh1;
+            break;
         }
         else if (geth1=='P'){
             printf("\n\n\tGo to shop!");
@@ -929,10 +1145,14 @@ int main(){
             streak++;
             money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B3;
             }
 
 		    break;
+        }
+        else if (geth2=='R'){
+            goto pauseh1;
+            break;
         }
         else if (geth2=='P'){
             printf("\n\n\tGo to shop!");
@@ -972,12 +1192,16 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1500;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B3;
             }
 
 		    break;
+        }
+        else if (geth3=='R'){
+            goto pauseh1;
+            break;
         }
         else if (geth3=='P'){
             printf("\n\n\tGo to shop!");
@@ -1017,12 +1241,16 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1500;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B3;
             }
 
 		    break;
+        }
+        else if (geth4=='R'){
+            goto pauseh1;
+            break;
         }
         else if (geth4=='P'){
             printf("\n\n\tGo to shop!");
@@ -1054,7 +1282,7 @@ int main(){
         printf("\t\t|   Your current HP: %2d    |\t\t|   Quiz streak : %2d  |\n", hp, streak);
         printf("\t\t+--------------------------+\t\t+---------------------+\n");
 		printf("\n\n\t5.Who is not the Presidential Place of the Soviet Union? ");
-		printf("\n\n\t\tA. Vladimir Il'ich Lenin\tB. Leonid Brezhnev\n\n\t\tC. Dwight Eisenhower\t\t\tD. Joseph Stalin");
+		printf("\n\n\t\tA. Vladimir Il'ich Lenin\tB. Leonid Brezhnev\n\n\t\tC. Dwight Eisenhower\t\tD. Joseph Stalin");
         printf("\n\n\n\t\t|   Money : %d   |\t\t\t[P] Shop\n", money);
         char geth5 = toupper(getch());
 		if (geth5=='C')
@@ -1063,12 +1291,16 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1500;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B3;
             }
 
 		    break;
+        }
+        else if (geth5=='R'){
+            goto pauseh1;
+            break;
         }
         else if (geth5=='P'){
             printf("\n\n\tGo to shop!");
@@ -1108,12 +1340,16 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1500;
+            money += 500;
             if (streak%3 ==  0){
-                goto Bonus;
+                goto B3;
             }
 
 		    break;
+        }
+        else if (geth6=='R'){
+            goto pauseh1;
+            break;
         }
         else if (geth6=='P'){
             printf("\n\n\tGo to shop!");
@@ -1154,15 +1390,21 @@ int main(){
 		    getch();
             
             streak++;
-            money += 1500;
+            money += 500;
             totalh = hp;
             totalm = money;
             if (streak%3 ==  0){
+                counthard = 7;
                 goto Bonus;
+                break;
             }
             goto puzzle2;
 
 		    break;
+        }
+        else if (geth7=='R'){
+            goto pauseh1;
+            break;
         }
         else if (geth7=='P'){
             printf("\n\n\tGo to shop!");
@@ -1196,19 +1438,43 @@ int main(){
         }
     }
 
-    EndGame:
+    B1:
     system("cls");
-    printf("\n\n\t\tYou current money = %d\n",money);
-    
-    
-    if(toupper(getch())=='Y'){
-        goto mainhome;
-    }
-    else if (toupper(getch())=='N'){
-        exit(1);
+    printf("\t\tThe God Blessing You!\n");
+    printf("\n\tYou Money +500");
+    printf("\n\n\t\t[Y] to continous your quiz!");
+    if (toupper(getch())=='Y'){
+        money+=500;
+        goto Easy;
     }
     else{
-        goto EndGame;
+        goto Bonus;
+    }
+
+    B2:
+    system("cls");
+    printf("\t\tThe God Blessing You!\n");
+    printf("\n\tYou Money +1000");
+    printf("\n\n\t\t[Y] to continous your quiz!");
+    if (toupper(getch())=='Y'){
+        money+=1000;
+        goto Normal;
+    }
+    else{
+        goto Bonus;
+    }
+
+    B3:
+    system("cls");
+    printf("\t\tThe God Blessing You!\n");
+    printf("\n\tYou Money +1500");
+    printf("\n\n\t\t[Y] to continous your quiz!");
+    if (toupper(getch())=='Y'){
+        money+=1500;
+        goto Hard;
+    }
+    else{
+        goto Bonus;
     }
 
     Bonus:
@@ -1217,9 +1483,20 @@ int main(){
     printf("\n\tYou HP +1");
     printf("\n\n\t\t[Y] to continous your quiz!");
     if (toupper(getch())=='Y'){
-        ownhp++;
-        hp++;
-        goto Easy;
+        ++ownhp;
+        ++hp;
+        if (counthard== 7){
+            counthard = 8;
+            goto Hard;
+        }
+        else if (countnormal== 7){
+            countnormal++;
+            goto Normal;
+        }
+        else if (counteasy== 7){
+            counteasy++;
+            goto Easy;
+        }
     }
     else{
         goto Bonus;
@@ -1405,7 +1682,7 @@ int main(){
     puzzle:
     system("cls");
     printf("\n\n\t\t\tKeep these keywords in mind!!!!!");
-    printf("\n\n\t\tTy\"ph\"oon\n");
+    printf("\n\n\t\t\"Love [i]s simply an electric[a]l bug in the hu[m]an neural circuit.\"\n");
     printf("\n\n\t[Y] to Normal Stage");
     printf("\n\t[N] to Menu");
     int chpz = toupper(getch());
@@ -1422,7 +1699,7 @@ int main(){
     puzzle1:
     system("cls");
     printf("\n\n\t\t\tKeep these keywords in mind!!!!!");
-    printf("\n\n\t\tTy\"ph\"oon\n");
+    printf("\n\n\t\t\"When it comes to people [y]ou really l[o]ve, yo[u] don't care about you[r]self.\"\n");
     printf("\n\n\t[Y] to Normal Stage");
     printf("\n\t[N] to Menu");
     int chpz1 = toupper(getch());
@@ -1439,7 +1716,9 @@ int main(){
     puzzle2:
     system("cls");
     printf("\n\n\t\t\tKeep these keywords in mind!!!!!");
-    printf("\n\n\t\tTy\"ph\"oon\n");
+    printf("\n\n\t\t\"It's not that you can [f]all in love with someone new bec[a]use you forgot the old.\
+    \n\t\tI[t]'s because you fall in love with someone new t[h]at you're able to forget about th[e] old.\
+    \n\t\t Only love can heal a hea[r]t that was hurt by love.\"\n");
     printf("\n\n\t[Y] to Hard Stage");
     printf("\n\t[N] to Menu");
     int chpz2 = toupper(getch());

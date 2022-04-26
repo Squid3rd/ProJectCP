@@ -3,7 +3,7 @@
 #include<ctype.h>
 #include<stdlib.h>
 #include<string.h>
-
+#include<time.h>
 
 int main(){
     
@@ -1430,7 +1430,7 @@ int main(){
             hp--;
             ownhp--;
             streak = 0;
-            totalh = hp;
+            totalh = ownhp;
             totalm = money;
 		    getch();
             if(hp == 0){
@@ -1497,6 +1497,7 @@ int main(){
         ++ownhp;
         ++hp;
         if (counthard== 7){
+            totalh++;
             counthard++;
             goto Hard;
         }
@@ -1648,8 +1649,20 @@ int main(){
 \t\t|___, ||     ||  :  |    |  `  '  |     |  |     |  |  |     __ \n\
 \t\t|     ||     ||     |     \\      /      |  |     |  |  |    |  |\n\
 \t\t|____/  \\___/  \\__,_|      \\_/\\_/      |____|    |__|__|    |__|\n");
-    printf("\n\n\t\t\tWith money = %d", totalm);
-    printf("\n\t\t\tWith HP = %d", totalh);
+    printf("\n\n\t\t\tEndgame with money = %d", totalm);
+    printf("\n\t\t\tEndgame with HP = %d", totalh);
+    if (streak == 21){
+        printf("\n\t\t\tType : %s Become a Legendary King Quiz!", yourname);
+    }
+    else if (streak < 21 && streak >= 15){
+        printf("\n\t\t\tType : %s Become a Mystic King Quiz!", yourname);
+    }
+    else if (streak < 15 && streak >= 7){
+        printf("\n\t\t\tType : %s Become a King Quiz!", yourname);
+    }
+    else if (streak < 7 && streak >= 0){
+        printf("\n\t\t\tType : %s Become a Nameless King Quiz!", yourname);
+    }
 
     printf("\n\n\t\t[Y] to Menu");
     printf("\n\t\t[Q] to Exit Game");
@@ -1674,6 +1687,7 @@ int main(){
 \t\t|     ||     ||     |    |     ||     |\\    ||     |    |  |\n\
 \t\t|____/  \\___/  \\__,_|    |_____| \\___/  \\___||_____|    |__|\n");
     
+    printf("\n\t\tNice try!");
     printf("\n\n\t\t[Y] to Retry");
     printf("\n\t\t[N] to Menu");
     printf("\n\t\t[Q] to Exit Game");
@@ -1746,6 +1760,7 @@ int main(){
 
     puzzle3:
     system("cls");
+    printf("\n\t\t\t(Hint: No Space)");
     printf("\n\n\t\t\tNow input your puzzle keywords! = ");
     char c[100], check[]="iamyourfather", check1[]="IAMYOURFATHER";
     scanf("%s", c);

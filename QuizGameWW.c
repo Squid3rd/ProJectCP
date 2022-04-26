@@ -29,9 +29,9 @@ int main(){
     printf("\t\t\t\t\t|========================================\n");
     printf("\t\t\t\t\t|            Quiz Game Worldwide        |\n");
     printf("\t\t\t\t\t|========================================\n");
-    printf("\t\t\t\t\t|\t\t\"S\" Start\t\t|\n");
-    printf("\t\t\t\t\t|\t\t\"G\" Github\t\t|\n");
-    printf("\t\t\t\t\t|\t\t\"Q\" Quit\t\t|\n");
+    printf("\t\t\t\t\t|\t\t[S] Start\t\t|\n");
+    printf("\t\t\t\t\t|\t\t[G] Github\t\t|\n");
+    printf("\t\t\t\t\t|\t\t[Q] Quit\t\t|\n");
     printf("\t\t\t\t\t|_______________________________________|\n");
     choose = toupper(getch());
     if(choose == 'G')
@@ -60,12 +60,16 @@ int main(){
         3.When more than 7 correct answers do a promotion Proceed to the next level \n\
           starting with Easy Normal and ending with Hard.\n\
         4.If your HP = 0 you will be downgraded.(in case of Easy, questions will be reset.)\n\
-        5.Your have shop to buy your Hp.");
-        printf("\n\n\t\t\t\"Y\" To begin this Quiz\n");
-        printf("\t\t\t\"N\" To Return to Menu\n");
+        5.Your have shop to buy your Hp and skip your quiz.\n\
+        6.You have a Quiz streak, if you have 3,6,9,12,15,18,21 Quiz steak you get a god\n\
+          blessing to give you a bouns money.\n\
+        7.In a God blessing have a 4 types. Easy +500, Normal +1000, Hard +1500 and Last one\n\
+          If you get a God bleesing bonus in the last question each modes you get +1 HP.");
+        printf("\n\n\t\t\t[Y] To begin this Quiz\n");
+        printf("\t\t\t[N] To Return to Menu\n");
         int hp=0;
         int ownhp = 7;
-        int money = 3000;
+        int money = 1000;
         int streak = 0;
         int i;
         int counteasy = 0, countnormal = 0, counthard = 0;
@@ -102,8 +106,8 @@ int main(){
     printf("\n\n\t\t\tOnce upon a time, the story of Mr. %s Aspiring to be Quiz king taomen dynasty\n\
     \t\tIn the 4th Edo period So he came to answer questions at Workpoint in the FanPunThang program.\n\
     \t\tHow will his story end? Follow and play together in Quiz Game Worldwide\n", yourname);
-    printf("\n\n\t\t\t\"Y\" To begin this Quiz\n");
-    printf("\t\t\t\"N\" To Return to Menu\n");
+    printf("\n\n\t\t\t[Y] To begin this Quiz\n");
+    printf("\t\t\t[N] To Return to Menu\n");
     char sto1 = toupper(getch());
     if (sto1=='Y')
         {
@@ -218,7 +222,7 @@ int main(){
     system("cls");
     ownhp = 7;
     counteasy = 0;
-    money = 3000;
+    money = 1000;
 
     printf("\t\t   ______________________________\n\
 \t\t / \\                             \\.\n\
@@ -227,8 +231,8 @@ int main(){
 \t\t    |      -----------------     |.\n\
 \t\t    |                            |.\n\
 \t\t    |                            |.\n\
-\t\t    |     Press \"Y\" to Retry     |.\n\
-\t\t    |     Press \"N\" to Menu      |.\n\
+\t\t    |     Press [Y] to Retry     |.\n\
+\t\t    |     Press [N] to Menu      |.\n\
 \t\t    |                            |.\n\
 \t\t    |                            |.\n\
 \t\t    |                            |.\n\
@@ -255,7 +259,7 @@ int main(){
     system("cls");
     ownhp=7;
     counteasy= 0;
-    money = 3000;
+    money = 1000;
     countnormal=0;
     printf("\t\t   ______________________________\n\
 \t\t / \\                             \\.\n\
@@ -264,8 +268,8 @@ int main(){
 \t\t    |      -----------------     |.\n\
 \t\t    |                            |.\n\
 \t\t    |                            |.\n\
-\t\t    |     Press \"Y\" to Easy      |.\n\
-\t\t    |     Press \"N\" to Menu      |.\n\
+\t\t    |     Press [Y] to Easy      |.\n\
+\t\t    |     Press [N] to Menu      |.\n\
 \t\t    |                            |.\n\
 \t\t    |                            |.\n\
 \t\t    |                            |.\n\
@@ -302,8 +306,8 @@ int main(){
 \t\t    |      -----------------     |.\n\
 \t\t    |                            |.\n\
 \t\t    |                            |.\n\
-\t\t    |     Press \"Y\" to Normal    |.\n\
-\t\t    |     Press \"N\" to Menu      |.\n\
+\t\t    |     Press [Y] to Normal    |.\n\
+\t\t    |     Press [N] to Menu      |.\n\
 \t\t    |                            |.\n\
 \t\t    |                            |.\n\
 \t\t    |                            |.\n\
@@ -330,7 +334,7 @@ int main(){
     system("cls");
     
     int score = 0;
-    hp += ownhp; 
+    hp = ownhp; 
     if (counteasy == 8){
         if (counthard>0){
             goto Hard;
@@ -367,7 +371,7 @@ int main(){
 		    printf("\n\n\tCorrect!!!");
             getch();
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B1;
             }
@@ -415,7 +419,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B1;
             }
@@ -463,7 +467,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B1;
             }
@@ -512,7 +516,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B1;
             }
@@ -560,7 +564,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B1;
             }
@@ -609,7 +613,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B1;
             }
@@ -658,7 +662,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             monn = money;
             hpn = hp;
             if (streak%3 ==  0){
@@ -708,6 +712,9 @@ int main(){
     Normal:
     system("cls");
     printf("Welcome to Normal!\t");
+    if (countnormal == 8){
+        goto puzzle1;
+    }
 
     for (i=countnormal; i<=8; i++)
     {
@@ -732,7 +739,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B2;
             }
@@ -780,7 +787,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B2;
             }
@@ -829,7 +836,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B2;
             }
@@ -877,7 +884,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B2;
             }
@@ -926,7 +933,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B2;
             }
@@ -975,7 +982,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B2;
             }
@@ -1023,7 +1030,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             monh = money;
             hph = hp;
 
@@ -1072,6 +1079,9 @@ int main(){
     system("cls");
     printf("Welcometo  Hard!");
     hp=ownhp;
+    if (counthard == 8){
+        goto puzzle2;
+    }
     for (i=counthard; i<=8; i++)
     {
         system("cls");
@@ -1095,7 +1105,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B3;
             }
@@ -1144,7 +1154,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B3;
             }
@@ -1193,7 +1203,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B3;
             }
@@ -1242,7 +1252,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B3;
             }
@@ -1292,7 +1302,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B3;
             }
@@ -1341,7 +1351,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             if (streak%3 ==  0){
                 goto B3;
             }
@@ -1391,7 +1401,7 @@ int main(){
 		    getch();
             
             streak++;
-            money += 500;
+            money += 300;
             totalh = hp;
             totalm = money;
             if (streak%3 ==  0){
@@ -1487,7 +1497,7 @@ int main(){
         ++ownhp;
         ++hp;
         if (counthard== 7){
-            counthard = 8;
+            counthard++;
             goto Hard;
         }
         else if (countnormal== 7){
@@ -1640,6 +1650,7 @@ int main(){
 \t\t|____/  \\___/  \\__,_|      \\_/\\_/      |____|    |__|__|    |__|\n");
     printf("\n\n\t\t\tWith money = %d", totalm);
     printf("\n\t\t\tWith HP = %d", totalh);
+
     printf("\n\n\t\t[Y] to Menu");
     printf("\n\t\t[Q] to Exit Game");
     int chwin = toupper(getch());
@@ -1720,7 +1731,7 @@ int main(){
     printf("\n\n\t\t\"It's not that you can [f]all in love with someone new bec[a]use you forgot the old.\
     \n\t\tI[t]'s because you fall in love with someone new t[h]at you're able to forget about th[e] old.\
     \n\t\t Only love can heal a hea[r]t that was hurt by love.\"\n");
-    printf("\n\n\t[Y] to Hard Stage");
+    printf("\n\n\t[Y] to LastQuiz");
     printf("\n\t[N] to Menu");
     int chpz2 = toupper(getch());
     if (chpz2=='Y'){

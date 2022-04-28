@@ -4,6 +4,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include<time.h>
+#include<windows.h>
 
 int main(){
     
@@ -95,6 +96,30 @@ int main(){
     Story:
     system("cls");
     char yourname[100];
+     printf("\
+\n\n\t\t    ._____________________________________________________.\
+\n\t\t    |          .....                ......                |\
+\n\t\t    |         .......              ........               |\
+\n\t\t    |         ..............................              |\
+\n\t\t    |        ...............................              |\
+\n\t\t    |        ................................             |\
+\n\t\t    |      .................................              |\
+\n\t\t    |   ......................................            |\
+\n\t\t    | ..........................................          |\
+\n\t\t    | .............                  ...........          |\
+\n\t\t    |  ..........    ....     ....    ..........          |\
+\n\t\t    |    .......    ......   ......    ........           |\
+\n\t\t    |.     .....    ......   ......     .......           |\
+\n\t\t    |       ....     ....     ....      ......            |\
+\n\t\t    |       .....                       ......            |\
+\n\t\t    |        ....                       ......            |\
+\n\t\t    |:       ......                    ..........         |\
+\n\t\t    |       ............              ...............     |\
+\n\t\t    |       ...........................................   |\
+\n\t\t    |    ..............................................   |\
+\n\t\t    |   ...............................................   |\
+\n\t\t    |    ................................................ |\n\
+\t\t    |_____________________________________________________|");
     printf("\n\n\t\tEnter your name : ");
     scanf("%[^\n]s", yourname);
     printf("\n\n\t\t\t\"Y\" To begin this Quiz\n");
@@ -103,9 +128,23 @@ int main(){
 
     Story1:
     system("cls");
-    printf("\n\n\t\t\tOnce upon a time, the story of Mr. %s Aspiring to be Quiz king taomen dynasty\n\
-    \t\tIn the 4th Edo period So he came to answer questions at Workpoint in the FanPunThang program.\n\
-    \t\tHow will his story end? Follow and play together in Quiz Game Worldwide\n", yourname);
+    printf("\
+\n\n\t\t\t               ..    __   :.                  \
+\n\t\t\t               __.  |  |^. __                \
+\n\t\t\t              |::|__|::|__|::|:                 \
+\n\t\t\t              |..  .!!~.. ..:| .....  ..       \
+\n\t\t\t    ..........|:..........:. |..........       \
+\n\t\t\t    .. ..    ..            ..    :.:.         \
+\n\t\t\t            :.              ..                \
+\n\t\t\t   .      .:                 .:               \
+\n\t\t\t   ...   .:                   ..  .. ..       \
+\n\t\t\t        ..                     :.    .        \
+\n\t\t\t       :.                       :.            \
+\n\t\t\t      .:                         ..           \
+\n\t\t\t      :                           ..         ");
+    printf("\n\n\n\t\tOnce upon a time, the story of Mr. %s Aspiring to be Quiz king taomen dynasty\n\
+    \tIn the 4th Edo period So he came to answer questions at Workpoint in the FanPunThang program.\n\
+    \tHow will his story end? Follow and play in Quiz Game Worldwide\n", yourname);
     printf("\n\n\t\t\t[Y] To begin this Quiz\n");
     printf("\t\t\t[N] To Return to Menu\n");
     char sto1 = toupper(getch());
@@ -224,7 +263,7 @@ int main(){
     counteasy = 0;
     money = 1000;
 
-    printf("\t\t   ______________________________\n\
+    printf("\n\n\t\t   ______________________________\n\
 \t\t / \\                             \\.\n\
 \t\t|   |      -----------------     |.\n\
 \t\t \\_ |      | YOU FAIL QUIZ |     |.\n\
@@ -261,7 +300,7 @@ int main(){
     counteasy= 0;
     money = 1000;
     countnormal=0;
-    printf("\t\t   ______________________________\n\
+    printf("\n\n\t\t   ______________________________\n\
 \t\t / \\                             \\.\n\
 \t\t|   |      -----------------     |.\n\
 \t\t \\_ |      | YOU FAIL QUIZ |     |.\n\
@@ -299,7 +338,7 @@ int main(){
     countnormal = 0;
     money = monn;
     counthard=0;
-    printf("\t\t   ______________________________\n\
+    printf("\n\n\t\t   ______________________________\n\
 \t\t / \\                             \\.\n\
 \t\t|   |      -----------------     |.\n\
 \t\t \\_ |      | YOU FAIL QUIZ |     |.\n\
@@ -1451,8 +1490,17 @@ int main(){
 
     B1:
     system("cls");
-    printf("\t\tThe God Blessing You!\n");
-    printf("\n\tYou Money +500");
+    printf("\
+   \n\n\t\t\t    <***>\
+   \n\t\t\t _  //^\\\\  _ \
+   \n\t\t\t/ \\/('_')\\/ \\\
+   \n\t\t\t|  \\/`-'\\/  |\
+   \n\t\t\t|  /  ,  \\  |\
+   \n\t\t\t| ( -.!.- ) |\
+   \n\t\t\t|  './_\\.'  |\
+   \n\t\t\t|   |   |   |");
+    printf("\n\n\t\t=====The God Blessing You!=====\n");
+    printf("\n\t\t>> You Money +500");
     printf("\n\n\t\t[Y] to continous your quiz!");
     if (toupper(getch())=='Y'){
         money+=500;
@@ -1464,8 +1512,17 @@ int main(){
 
     B2:
     system("cls");
-    printf("\t\tThe God Blessing You!\n");
-    printf("\n\tYou Money +1000");
+    printf("\
+   \n\n\t\t\t    <***>\
+   \n\t\t\t _  //^\\\\  _ \
+   \n\t\t\t/ \\/('_')\\/ \\\
+   \n\t\t\t|  \\/`-'\\/  |\
+   \n\t\t\t|  /  ,  \\  |\
+   \n\t\t\t| ( -.!.- ) |\
+   \n\t\t\t|  './_\\.'  |\
+   \n\t\t\t|   |   |   |");
+    printf("\n\n\t\t=====The God Blessing You!=====\n");
+    printf("\n\t\t>> You Money +1000");
     printf("\n\n\t\t[Y] to continous your quiz!");
     if (toupper(getch())=='Y'){
         money+=1000;
@@ -1477,8 +1534,17 @@ int main(){
 
     B3:
     system("cls");
-    printf("\t\tThe God Blessing You!\n");
-    printf("\n\tYou Money +1500");
+    printf("\
+   \n\n\t\t\t    <***>\
+   \n\t\t\t _  //^\\\\  _ \
+   \n\t\t\t/ \\/('_')\\/ \\\
+   \n\t\t\t|  \\/`-'\\/  |\
+   \n\t\t\t|  /  ,  \\  |\
+   \n\t\t\t| ( -.!.- ) |\
+   \n\t\t\t|  './_\\.'  |\
+   \n\t\t\t|   |   |   |");
+    printf("\n\n\t\t=====The God Blessing You!=====\n");
+    printf("\n\t\t>> You Money +1500");
     printf("\n\n\t\t[Y] to continous your quiz!");
     if (toupper(getch())=='Y'){
         money+=1500;
@@ -1490,8 +1556,17 @@ int main(){
 
     Bonus:
     system("cls");
-    printf("\t\tThe God Blessing You!\n");
-    printf("\n\tYou HP +1");
+    printf("\
+   \n\n\t\t\t    <***>\
+   \n\t\t\t _  //^\\\\  _ \
+   \n\t\t\t/ \\/('_')\\/ \\\
+   \n\t\t\t|  \\/`-'\\/  |\
+   \n\t\t\t|  /  ,  \\  |\
+   \n\t\t\t| ( -.!.- ) |\
+   \n\t\t\t|  './_\\.'  |\
+   \n\t\t\t|   |   |   |");
+    printf("\n\n\t\t=====The God Blessing You!=====\n");
+    printf("\n\t\t>> You HP +1");
     printf("\n\n\t\t[Y] to continous your quiz!");
     if (toupper(getch())=='Y'){
         ++ownhp;
@@ -1516,7 +1591,16 @@ int main(){
 
     ShopEasy:
     system("cls");
-    printf("\n\n\t\t\tWelcome to Shop!\t\t|  money = %d  |", money);
+    printf("\
+\n\n\t\t\t\t  _____ __ __   ___   ____  \
+\n\t\t\t\t / ___/|  |  | /   \\ |    \\ \
+\n\t\t\t\t(   \\_ |  |  ||     ||  o  )\
+\n\t\t\t\t \\__  ||  _  ||  O  ||   _/ \
+\n\t\t\t\t /  \\ ||  |  ||     ||  |   \
+\n\t\t\t\t \\    ||  |  ||     ||  |   \
+\n\t\t\t\t  \\___||__|__| \\___/ |__|   \
+");
+    printf("\n\n\n\t\t\tWelcome to Shop!\t\t|  money = %d  |", money);
     printf("\n\n\t\tA.Pay money 1000 to heart +1");
     printf("\n\t\tB.Pay money 2000 to skip your quiz.");
     printf("\n\t\tC.Pay money 3000 to heart +1 and skip your quiz.");
@@ -1558,7 +1642,16 @@ int main(){
 
     ShopNormal:
     system("cls");
-    printf("\n\n\t\t\tWelcome to Shop!\t\t|  money = %d  |", money);
+    printf("\
+\n\n\t\t\t\t  _____ __ __   ___   ____  \
+\n\t\t\t\t / ___/|  |  | /   \\ |    \\ \
+\n\t\t\t\t(   \\_ |  |  ||     ||  o  )\
+\n\t\t\t\t \\__  ||  _  ||  O  ||   _/ \
+\n\t\t\t\t /  \\ ||  |  ||     ||  |   \
+\n\t\t\t\t \\    ||  |  ||     ||  |   \
+\n\t\t\t\t  \\___||__|__| \\___/ |__|   \
+");
+    printf("\n\n\n\t\t\tWelcome to Shop!\t\t|  money = %d  |", money);
     printf("\n\n\t\tA.Pay money 1000 to heart +1");
     printf("\n\t\tB.Pay money 2000 to skip your quiz.");
     printf("\n\t\tC.Pay money 3000 to heart +1 and skip your quiz.");
@@ -1600,7 +1693,16 @@ int main(){
 
     ShopHard:
     system("cls");
-    printf("\n\n\t\t\tWelcome to Shop!\t\t|  money = %d  |", money);
+    printf("\
+\n\n\t\t\t\t  _____ __ __   ___   ____  \
+\n\t\t\t\t / ___/|  |  | /   \\ |    \\ \
+\n\t\t\t\t(   \\_ |  |  ||     ||  o  )\
+\n\t\t\t\t \\__  ||  _  ||  O  ||   _/ \
+\n\t\t\t\t /  \\ ||  |  ||     ||  |   \
+\n\t\t\t\t \\    ||  |  ||     ||  |   \
+\n\t\t\t\t  \\___||__|__| \\___/ |__|   \
+");
+    printf("\n\n\n\t\t\tWelcome to Shop!\t\t|  money = %d  |", money);
     printf("\n\n\t\tA.Pay money 1000 to heart +1");
     printf("\n\t\tB.Pay money 2000 to skip your quiz.");
     printf("\n\t\tC.Pay money 3000 to heart +1 and skip your quiz.");
@@ -1663,7 +1765,27 @@ int main(){
     else if (streak < 7 && streak >= 0){
         printf("\n\t\t\tType : %s Become a Nameless King Quiz!", yourname);
     }
-
+    printf("\
+\n\n\t\t    ._____________________________________________________.\
+\n\t\t    |                   +++++                             |\
+\n\t\t    |         0        +++++++        0                   |\
+\n\t\t    |         +       +++++++++       +                   |\
+\n\t\t    |        +++     +++++++++++     +++                  |\
+\n\t\t    |       +++++++++++++++++++++++++++++                 |\
+\n\t\t    |      +++++++++++++++++++++++++++++++                |\
+\n\t\t    |    .+++++++++++++++++++++++++++++++++.              |\
+\n\t\t    |   ......................................            |\
+\n\t\t    |  ............                  ..........           |\
+\n\t\t    |   .........    ....     ....    .........           |\
+\n\t\t    |    .......    ..++..   ..++..    ........           |\
+\n\t\t    |.     .....    ..++..   ..++..     .......           |\
+\n\t\t    |       ....     ....     ....      ......            |\
+\n\t\t    |       .....                       ......            |\
+\n\t\t    |        ....                       ......            |\
+\n\t\t    |:       ......                    ..........         |\
+\n\t\t    |       ............              ...............     |\
+\n\t\t    |       ...........................................   |\
+\n\t\t    |_____________________________________________________|");
     printf("\n\n\t\t[Y] to Menu");
     printf("\n\t\t[Q] to Exit Game");
     int chwin = toupper(getch());
@@ -1686,7 +1808,6 @@ int main(){
 \t\t|___, ||     ||  :  |    |     ||     |/  \\ ||   [_      __ \n\
 \t\t|     ||     ||     |    |     ||     |\\    ||     |    |  |\n\
 \t\t|____/  \\___/  \\__,_|    |_____| \\___/  \\___||_____|    |__|\n");
-    
     printf("\n\t\tNice try!");
     printf("\n\n\t\t[Y] to Retry");
     printf("\n\t\t[N] to Menu");
@@ -1707,7 +1828,24 @@ int main(){
 
     puzzle:
     system("cls");
-    printf("\n\n\t\t\tKeep these keywords in mind!!!!!");
+    printf("\
+\n\n\t\t                             |>>>\
+\n\t\t                             |\
+\n\t\t                         _  _|_  _\
+\n\t\t                        |;|_|;|_|;|\
+\n\t\t                        \\\\.    .  /\
+\n\t\t                         \\\\:  .  /\
+\n\t\t                          ||:   |\
+\n\t\t                          ||:.  |\
+\n\t\t                          ||:  .|\
+\n\t\t                          ||:   |       \\,/\
+\n\t\t                          ||: , |            /`\\\
+\n\t\t                          ||:   |\
+\n\t\t                          ||: . |\
+\n\t\t                         _||_   |\
+\n\t\t-~~__            __ ----~    ~`---,              ___\
+\n\t\t     ~---__ ,--~'                  ~~----_____-~'   `~----~~\n");
+    printf("\n\n\t\t\t\tKeep these keywords in mind!!!!!");
     printf("\n\n\t\t\"Love [i]s simply an electric[a]l bug in the hu[m]an neural circuit.\"\n");
     printf("\n\n\t[Y] to Normal Stage");
     printf("\n\t[N] to Menu");
@@ -1724,7 +1862,26 @@ int main(){
 
     puzzle1:
     system("cls");
-    printf("\n\n\t\t\tKeep these keywords in mind!!!!!");
+    printf("\
+\n\n\t\t                                   |>>>\
+\n\t\t                                   |\
+\n\t\t                     |>>>      _  _|_  _         |>>>\
+\n\t\t                     |        |;| |;| |;|        |\
+\n\t\t                 _  _|_  _    \\\\.    .  /    _  _|_  _\
+\n\t\t                |;|_|;|_|;|    \\\\:. ,  /    |;|_|;|_|;|\
+\n\t\t                \\\\..      /    ||;   . |    \\\\.    .  /\
+\n\t\t                 \\\\.  ,  /     ||:  .  |     \\\\:  .  /\
+\n\t\t                  ||:   |_   _ ||_ . _ | _   _||:   |\
+\n\t\t                  ||:  .|||_|;|_|;|_|;|_|;|_|;||:.  |\
+\n\t\t                  ||:   ||.    .     .      . ||:  .|\
+\n\t\t                  ||: . || .     . .   .  ,   ||:   |       \\,/\
+\n\t\t                  ||:   ||:  ,  _______   .   ||: , |            /`\\\
+\n\t\t                  ||:   || .   /+++++++\\    . ||:   |\
+\n\t\t                  ||:   ||.    |+++++++| .    ||: . |\
+\n\t\t               __ ||: . ||: ,  |+++++++|.  . _||_   |\
+\n\t\t      ____--`~    '--~~__|.    |+++++__|----~    ~`---,              ___\
+\n\t\t -~--~                   ~---__|,--~'                  ~~----_____-~'");
+    printf("\n\n\t\t\t\tKeep these keywords in mind!!!!!");
     printf("\n\n\t\t\"When it comes to people [y]ou really l[o]ve, yo[u] don't care about you[r]self.\"\n");
     printf("\n\n\t[Y] to Normal Stage");
     printf("\n\t[N] to Menu");
@@ -1741,7 +1898,36 @@ int main(){
 
     puzzle2:
     system("cls");
-    printf("\n\n\t\t\tKeep these keywords in mind!!!!!");
+    printf("\
+\n\n\t\t\t                           .-----.\
+\n\t\t\t                         .'       `.\
+\n\t\t\t                        :      ^v^  :\
+\n\t\t\t                    |>> :           :\
+\n\t\t\t                    |   '     |>>   '\
+\n\t\t\t         |>>       //\\   `.   |   .'\
+\n\t\t\t         |        //  \\    `-/\\--'\
+\n\t\t\t        //\\      //    \\    // \\\
+\n\t\t\t       //  \\    //______\\  //___\\\
+\n\t\t\t      //    \\   |= o o ||   |- |\
+\n\t\t\t      ||___||   |__=_-__|'  |[]|\
+\n\t\t\t       |[] |_______\\__|/_ _ |= |\
+\n\t\t\t^V^    |-  /= __   __    /-\\|= | \
+\n\t\t\t       |= /- /\\/  /\\/   /=- \\. | \
+\n\t\t\t       | /_.=========._/_.-._\\ |\
+\n\t\t\t       |= |-_'.- .'_- |  /|\\ |.|'\
+\n\t\t\t       \\  |=|:|= |:| =| |~|~||'|\
+\n\t\t\t        |~|-|:| -|:|  |-|~|~||=|      ^V^\
+\n\t\t\t        |=|=|:|- |:|- | |~|~|| |\
+\n\t\t\t        | |-_~__=_~__=|_^^^^^|/___\
+\n\t\t\t        |-(=-=-=-=-=-(|=====/=_-=/\\\
+\n\t\t\t        | |=_-= _=- _=| -_=/=_-_/__\\ \
+\n\t\t\t        | |- _ =_-  _-|=_- |]#| I I|\
+\n\t\t\t        |=|_/ \\_-_= - |- = |]#| I |\
+\n\t\t\t        | /  _/ \\. -_=| =__|]!!!I_|\
+\n\t\t\t       _|/-'/  ` \\_/ \\|/' _ ^^^^`.==_^.\
+\n\t\t\t     _/  _/`-./`-; `-.\\_ / \\_'\\`. `. ===`.\
+\n\t\t\t    / .-'  __/_   `.   _/.' .-' `-. ; ====;\\");
+    printf("\n\n\t\t\t\tKeep these keywords in mind!!!!!");
     printf("\n\n\t\t\"It's not that you can [f]all in love with someone new bec[a]use you forgot the old.\
     \n\t\tI[t]'s because you fall in love with someone new t[h]at you're able to forget about th[e] old.\
     \n\t\t Only love can heal a hea[r]t that was hurt by love.\"\n");
@@ -1760,7 +1946,22 @@ int main(){
 
     puzzle3:
     system("cls");
-    printf("\n\t\t\t(Hint: No Space)");
+    printf("\
+\n\n\t\t\t           _______\
+\n\t\t\t          ***| |***\
+\n\t\t\t        *****| |*****\
+\n\t\t\t       ******| |******\
+\n\t\t\t       ******| |******\
+\n\t\t\t      *******| |*******\
+\n\t\t\t      *******\\ /*******\
+\n\t\t\t     ** (___)| |(___) **\
+\n\t\t\t    **  \\    /D\\    /  **\
+\n\t\t\t   **  \\ \\  /| |\\  / /  **\
+\n\t\t\t  **    \\_\\/|| ||\\/_/    **\
+\n\t\t\t **     / O-------O \\     **\
+\n\t\t\t**_____/   \\|||||/   \\_____**\
+\n\t\t\t      /_______________\\");
+    printf("\n\n\t\t\t(Hint: No Space)");
     printf("\n\n\t\t\tNow input your puzzle keywords! = ");
     char c[100], check[]="iamyourfather", check1[]="IAMYOURFATHER";
     scanf("%s", c);

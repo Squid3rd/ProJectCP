@@ -62,7 +62,7 @@ int main(){
           starting with Easy Normal and ending with Hard.\n\
         4.If your HP = 0 you will be downgraded.(in case of Easy, questions will be reset.)\n\
         5.Your have shop to buy your Hp and skip your quiz.\n\
-        6.You have a Quiz streak, if you have 3,6,9,12,15,18,21 Quiz steak you get a god\n\
+        6.You have a Quiz streak, if you have 3,6,9,12,15,18,21 Quiz streak you get a God\n\
           blessing to give you a bouns money.\n\
         7.In a God blessing have a 4 types. Easy +500, Normal +1000, Hard +1500 and Last one\n\
           If you get a God bleesing bonus in the last question each modes you get +1 HP.");

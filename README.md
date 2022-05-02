@@ -2,11 +2,11 @@
 Computer Programming Project KMITL Semester 2/2020 1st Year
 
 ## ที่มา
-
+> 
 
 
 ## วัตถุประสงค์
-
+> ต้องการทำเพื่อให้ผู้เล่นนั้นได้มีความรู้เกี่ยวกับความรู้ทั่วไปภายในโลกและประเทศไทย และเพื่อพัฒนาการเขียนโค้ด
 
 
 ## Website
@@ -18,7 +18,9 @@ Computer Programming Project KMITL Semester 2/2020 1st Year
 
 
 ## Poster
-
+> * [Poster (download)](https://drive.google.com/u/1/uc?id=1t4YyNaY0fB7iYnSVVjrXCsk5jGsxqMG0&export=download)
+> 
+>  ![Poster (download)](poster/postercompro.jpg)
 
 ---
 สมาชิก

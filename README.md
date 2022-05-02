@@ -1,5 +1,5 @@
 # Quiz Game Worldwide
-Computer Programming Project KMITL Semester 2/2020 1st Year
+Computer Programming Project with C Language
 
 ## ที่มา
 > พวกเราต้องการสร้าง quiz game ที่ให้ความรู้เกี่ยวกับความรู้ทั่วไปภายในโลกและประเทศไทย พร้อมกับเกมเพลย์ภายในที่ออกไปทางแนว RPG โดยการเขียนและพัฒนาผ่านภาษา C

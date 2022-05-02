@@ -769,7 +769,7 @@ int main(){
         printf("\t\t|   Your current HP: %2d    |\t\t|   Quiz streak : %2d  |\n", hp, streak);
         printf("\t\t+--------------------------+\t\t+---------------------+\n");
 		printf("\n\n\t1.How many provinces does Thailand currently have?");
-		printf("\n\n\t\tA. 76\t\tB. 77\n\n\t\tC. 78\t\tD. 79");
+		printf("\n\n\t\tA. 77\t\tB. 78\n\n\t\tC. 79\t\tD. 80");
         printf("\n\n\n\t\t|   Money : %d   |\t\t\t[P] Shop\n", money);
         char getn1 = toupper(getch());
 		if (getn1=='A')
@@ -796,7 +796,7 @@ int main(){
         }
 		else if (getn1 == 'D' || getn1 == 'B' || getn1 == 'C')
 		{
-		    printf("\n\n\tWrong!!! 76\n");
+		    printf("\n\n\tWrong!!! 77\n");
             
             hp--;
             ownhp--;

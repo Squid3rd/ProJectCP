@@ -1,0 +1,154 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: rgb(255, 246, 239);
+  margin:0;
+  font-family:sans-serif;
+}
+a{
+  text-decoration:none;
+  color:var(--ci5);
+}
+a:hover{
+color:var(--ci4);
+}
+
+.container{
+  --ci1:rgb(188, 241, 145);
+  --ci2:#70fdfd;
+  --ci3:#ff9659;
+  --ci4:#e58ffa;
+  --ci5:#ff90c7;
+  --ci6:hsl(0,100%,0%);
+  background:linear-gradient(to right, var(--ci1), var(--ci1), var(--ci2));
+ 
+}
+nav{
+  height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing:border-box;
+  box-shadow:0px 5px 10px rgba(255, 252, 252);
+  font-family: 'Noto Sans Thai', sans-serif; 
+  position: absolute;
+  left: 50%;
+}
+.nav-items{
+  height:7%;
+  width: 60%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  position: fixed;
+  background-image: linear-gradient(to right,rgb(79, 255, 232),rgb(108, 198, 250),rgb(110, 112, 255));
+  border-radius: 10px;
+  z-index: 999;
+  transition:1s;
+  color: rgb(255, 255, 255);
+}
+nav a{
+  height:100%;
+  display:inline-flex;
+  align-items:center;
+  padding:0 1.5em ;
+  font-weight:bold;
+  transition:all .2s;
+}
+nav a:hover{
+  color:white;
+  font-size: 24px;
+  background:var(--ci3);
+}
+#header{
+  height:1000px;
+  font-size:38px;
+  box-sizing:border-box;
+  text-align:center;
+  background-image: linear-gradient(to right,rgb(205, 144, 255),rgb(157, 166, 250),rgb(167, 195, 255));
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  display:flex;
+  position:relative;
+}
+.header-inner{
+  width:100%;
+  height:100%;
+  justify-content:center;
+  align-items:center;
+  display:flex;
+  flex-flow:column wrap;
+  font-family: 'Chonburi', cursive;
+}
+.header-inner h1,.header-inner h2{
+  margin:0;
+}
+.header-inner h2{
+  font-size:2em;
+  color:#fff;
+}
+.article{
+  max-width:1200px;
+  margin: auto;
+}
+#two{
+  color: #0000;
+}
+.title{
+  color:var(--ci2);
+  background:var(--ci3);
+  padding:0.5em .6em;
+  border-radius:100px;
+  display:inline-block;
+  font-size:2em;  
+  /* font-family: 'Noto Sans Thai', sans-serif; */
+  font-family: 'Chonburi', cursive;
+
+}
+.text{
+  text-indent: 10%;
+  font-family: 'Mitr', cursive;
+  font-size: large;
+}
+.subtitle{
+  font-size:1.5em;
+  color:var(--ci5);
+  /* font-family: 'Noto Sans Thai', sans-serif; */
+}
+/* .lead{
+  font-family: 'Noto Sans Thai', sans-serif;
+} */
+.pic{
+  width:100%;
+  border-radius:10px;
+  box-shadow:0px 5px 10px #0005;
+  margin:1em 0 2em;
+  }
+.hr{
+  display:block;
+  width:200px;  
+  background:rgb(0, 0, 0,0);
+  height:4px;
+  margin:auto;
+  padding: 2em;
+}
+#copy{
+  background:var(--ci5);
+  color:white;
+  padding:1em 0;
+  text-align:center;
+  font-size:.8em;
+  font-weight:700;
+  color:#fff8;
+  /* font-family: 'Noto Sans Thai', sans-serif; */
+  }
+blockquote {
+  /* margin: 2em; */
+  background: #f4f5f5;
+  padding: 1em;
+  font-size: 1.3em;
+  border-radius:10px;
+  /* font-family: 'Noto Sans Thai', sans-serif; */
+}

@@ -5,6 +5,7 @@ body{
   background-color: rgb(2239);
   margin:0;
   font-family:sans-serif;
+  background-image: linear-gradient(to bottom right,rgb(255, 211, 189) 10%,rgb(184, 92, 56),rgb(117, 49, 15)80%);
 }
 a{
   text-decoration:none;
@@ -21,7 +22,7 @@ color:var(--ci4);
   --ci4:#e58ffa;
   --ci5:#ff90c7;
   --ci6:hsl(0,100%,0%);
-  background-image: linear-gradient(to bottom right,rgb(255, 211, 189) 5%,rgb(184, 92, 56),rgb(117, 49, 15)80%);
+  /* background-image: linear-gradient(to bottom right,rgb(255, 211, 189) 5%,rgb(184, 92, 56),rgb(117, 49, 15)80%); */
 /*  rgb(45, 36, 36) 99% */
 }
 nav{
@@ -146,8 +147,13 @@ nav a:hover{
   color: #ffebdb;
 }
 .name{
+  position: relative;
   color:black;
   text-align: center;
+  background-color: red;
+  padding: 1em;
+  left: 40%;
+  max-width: 400px;
 }
 .subtitle{
   position: relative;
@@ -303,7 +309,6 @@ blockquote {
   margin: auto;
 }
 #source{
-  
   position: relative;
   top: 0;
   left: 0;
@@ -319,12 +324,25 @@ blockquote {
 }
 
 .vdo{
-    margin: auto;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 1em 1em 1em #0009;
 }
-
+.member{
+  height: 100%;
+  padding:1em;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background: rgb(180, 132, 108);
+  text-shadow: 1em 0.5em 0.5em #0005;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#range{
+  margin: 1em;
+}
 #sourcecode{
     color: white;
     background-color: black;
@@ -332,6 +350,7 @@ blockquote {
     width: 100vh;
     height: 70vh;
     overflow: scroll;
+    box-shadow: 1em 1em 1em #0009;
 }
 ::-webkit-scrollbar {
       width: 15px;
@@ -350,3 +369,4 @@ blockquote {
  
 ::-webkit-scrollbar-corner {
       background-color: red;
+}
